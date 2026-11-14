@@ -1,13 +1,15 @@
 # Web Remote Desktop
 
-Веб-сервер для удалённого просмотра и управления рабочим столом через браузер в реальном времени на базе **FastAPI** и **WebSockets**.
+> 🌐 **Language:** **English** | [Русский (README_Ru.md)](README_Ru.md)
 
-## ✨ Возможности
-- 🖥️ **Стриминг экрана (~30 FPS)** — быстрый захват монитора через `mss`, сжатие кадров в JPEG (`Pillow`) и бинарная передача по WebSocket.
-- 🖱️ **Удалённое управление мышью и клавиатурой** — перехват координат курсора, кликов и нажатий клавиш в браузере и эмуляция ввода на хосте через `pynput`.
-- 🌐 **Zero-Client** — для подключения нужен только современный веб-браузер.
+A low-latency browser-based remote desktop (KVM) streaming server built with **FastAPI** and **WebSockets**.
 
-## 🚀 Установка и запуск
+## ✨ Features
+- 🖥️ **Real-Time Screen Streaming (~30 FPS)** — fast monitor capture via `mss`, JPEG frame compression (`Pillow`), and binary streaming over WebSockets.
+- 🖱️ **Remote Mouse & Keyboard Control** — captures cursor coordinates, clicks, and keystrokes in the browser and emulates native host input via `pynput`.
+- 🌐 **Zero-Client Architecture** — requires nothing more than a modern web browser to connect.
+
+## 🚀 Installation & Usage
 
 ```bash
 python3 -m venv venv
